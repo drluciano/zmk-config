@@ -20,18 +20,6 @@
     };
 
     behaviors {
-        new_behavior: new-behavior {
-            compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
-            #binding-cells = <2>;
-            tapping-term-ms = <1000>;
-            quick-tap-ms = <(-1)>;
-            bindings =
-                <&kp>,
-                <&kp>;
-
-            hold-trigger-key-positions = <25 26 27 34 33 32>;
-        };
     };
 
     keymap {
