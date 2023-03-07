@@ -27,8 +27,10 @@
             tapping-term-ms = <1000>;
             quick-tap-ms = <(-1)>;
             bindings =
-                <&mt>,
+                <&kp>,
                 <&kp>;
+
+            hold-trigger-key-positions = <25 26 27 34 33 32>;
         };
     };
 
