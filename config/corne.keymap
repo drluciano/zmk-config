@@ -20,10 +20,12 @@
     };
 
     behaviors {
-        new_behavior: new-behavior {
+        new_behavior2: new-behavior {
             compatible = "zmk,behavior-hold-tap";
             label = "NEW_BEHAVIOR";
             #binding-cells = <2>;
+            hold-trigger-key-positions = <>;
+            bindings = <&mt>;
             tapping-term-ms = <3>;
         };
     };
