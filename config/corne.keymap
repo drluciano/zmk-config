@@ -37,17 +37,14 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_COMMAND>,
-                <&macro_wait_time 50>,
-                <&kp SPACE>,
+                <&macro_wait_time 250>,
+                <&kp LEFT_COMMAND &kp SPACE>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&kp SPACE &kp LEFT_COMMAND>,
                 <&macro_wait_time 75>,
                 <&macro_tap>,
-                <&kp G &kp I &kp T &kp L &kp A &kp B &kp DOT &kp C &kp O &kp M>,
-                <&macro_wait_time 250>,
-                <&kp ENTER>;
+                <&kp G &kp I &kp T &kp L &kp A &kp B &kp DOT &kp C &kp O &kp M &kp ENTER>;
         };
     };
 
