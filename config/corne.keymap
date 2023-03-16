@@ -82,6 +82,38 @@
                 <&macro_wait_time 500>,
                 <&kp M &kp ENTER>;
         };
+        Zoom: Zoom {
+            compatible = "zmk,behavior-macro";
+            label = "Zoom_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_wait_time 150>,
+                <&kp LEFT_COMMAND &kp SPACE>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp SPACE &kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp Z &kp O &kp O &kp M>,
+                <&macro_wait_time 100>,
+                <&kp ENTER>;
+        };
+        PivitoalTracker: PivitoalTracker {
+            compatible = "zmk,behavior-macro";
+            label = "PivitolTracker_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_wait_time 100>,
+                <&kp LEFT_COMMAND &kp SPACE>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp SPACE &kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp H &kp T &kp T &kp P &kp COLON &kp FSLH &kp FSLH &kp P &kp I &kp V &kp O &kp T &kp A &kp L &kp T &kp R &kp A &kp C &kp K &kp E &kp R &kp DOT &kp C &kp O>,
+                <&macro_wait_time 500>,
+                <&kp M &kp ENTER>;
+        };
     };
 
     behaviors {
@@ -137,9 +169,9 @@
 
         Macros {
             bindings = <
-&trans  &kp Q  &kp W   &kp E   &kp R     &Terminal  &trans     &trans   &IDEA  &trans  &trans  &trans
-&trans  &kp A  &kp S   &kp D   &kp F      &ChatGPT  &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &kp Z  &kp X   &kp C   &kp V         &kp B  &trans  &MyGitLab  &trans  &trans  &trans  &trans
+&trans  &kp Q  &kp W   &kp E   &kp R     &Terminal  &trans     &trans   &IDEA  &trans  &PivitoalTracker  &trans
+&trans  &kp A  &kp S   &kp D   &kp F      &ChatGPT  &trans     &trans  &trans  &trans            &trans  &trans
+&trans  &Zoom  &kp X   &kp C   &kp V         &kp B  &trans  &MyGitLab  &trans  &trans            &trans  &trans
                       &trans  &trans  &kp LEFT_ALT  &trans     &trans  &trans
             >;
         };
