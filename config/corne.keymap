@@ -55,15 +55,15 @@
             label = "Terminalmacro";
             #binding-cells = <0>;
             bindings =
+                <&macro_tap>,
                 <&macro_press>,
-                <&macro_wait_time 150>,
                 <&kp LEFT_COMMAND &kp SPACE>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&kp SPACE &kp LEFT_COMMAND>,
                 <&macro_tap>,
                 <&kp I &kp T &kp E &kp R &kp M>,
-                <&macro_tap>,
+                <&macro_wait_time 100>,
                 <&kp ENTER>;
         };
     };
@@ -121,7 +121,7 @@
 
         Macros {
             bindings = <
-&trans  &kp Q  &kp W   &kp E   &kp R         &kp T  &trans     &trans   &IDEA  &trans  &trans  &trans
+&trans  &kp Q  &kp W   &kp E   &kp R     &Terminal  &trans     &trans   &IDEA  &trans  &trans  &trans
 &trans  &kp A  &kp S   &kp D   &kp F         &kp G  &trans     &trans  &trans  &trans  &trans  &trans
 &trans  &kp Z  &kp X   &kp C   &kp V         &kp B  &trans  &MyGitLab  &trans  &trans  &trans  &trans
                       &trans  &trans  &kp LEFT_ALT  &trans     &trans  &trans
