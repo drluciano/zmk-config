@@ -32,7 +32,7 @@
                 <&macro_wait_time 1>,
                 <&kp I &kp D &kp E &kp A>,
                 <&macro_wait_time 100>,
-                <&kp ENTER>;
+                <&kp ENTER &kp LEFT_COMMAND>;
         };
         MyGitLab: MyGitLab {
             compatible = "zmk,behavior-macro";
@@ -126,11 +126,9 @@
                 <&macro_release>,
                 <&kp SPACE &kp LEFT_COMMAND>,
                 <&macro_tap>,
-                <&kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp G &kp I &kp T &kp L &kp A &kp B &kp DOT &kp C &kp R &kp E &kp A &kp T &kp E &kp DOT &kp A &kp R &kp M &kp Y &kp DOT &kp M &kp I &kp FSLH &kp L>,
-                <&macro_tap>,
-                <&kp R &kp E &kp C &kp R &kp U &kp I &kp T &kp I &kp N &kp G &kp FSLH &kp R &kp E &kp C &kp R &kp U &kp I &kp T &kp M>,
+                <&kp G &kp I &kp T &kp L &kp A &kp B &kp DOT &kp C &kp R &kp E &kp A &kp T &kp E &kp DOT &kp A &kp R &kp M &kp Y &kp DOT &kp M &kp I &kp L &kp FSLH &kp R &kp E &kp C &kp R &kp U>,
                 <&macro_wait_time 500>,
-                <&kp E &kp ENTER>;
+                <&kp I &kp ENTER>;
         };
         Slack: Slack {
             compatible = "zmk,behavior-macro";
