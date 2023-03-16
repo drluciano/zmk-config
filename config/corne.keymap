@@ -30,14 +30,19 @@
                 <&macro_release>,
                 <&kp SPACE &kp LEFT_COMMAND>,
                 <&macro_wait_time 100>,
+                <&macro_tap>,
                 <&kp I>,
                 <&macro_wait_time 100>,
+                <&macro_tap>,
                 <&kp D>,
                 <&macro_wait_time 100>,
+                <&macro_tap>,
                 <&kp E>,
                 <&macro_wait_time 100>,
+                <&macro_tap>,
                 <&kp A>,
                 <&macro_wait_time 500>,
+                <&macro_tap>,
                 <&kp ENTER>;
         };
         MyGitLab: MyGitLab {
