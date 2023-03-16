@@ -130,6 +130,22 @@
                 <&macro_wait_time 500>,
                 <&kp E &kp ENTER>;
         };
+        Slack: Slack {
+            compatible = "zmk,behavior-macro";
+            label = "Slack_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_wait_time 150>,
+                <&kp LEFT_COMMAND &kp SPACE>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp SPACE &kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp S &kp L &kp A &kp C &kp K>,
+                <&macro_wait_time 100>,
+                <&kp ENTER>;
+        };
     };
 
     behaviors {
@@ -185,10 +201,10 @@
 
         Macros {
             bindings = <
-&trans  &kp Q  &kp W   &kp E  &RecruitMeGitlab     &Terminal  &trans     &trans   &IDEA  &trans  &PivitoalTracker  &trans
-&trans  &kp A  &kp S   &kp D             &kp F      &ChatGPT  &trans     &trans  &trans  &trans            &trans  &trans
-&trans  &Zoom  &kp X   &kp C             &kp V         &kp B  &trans  &MyGitLab  &trans  &trans            &trans  &trans
-                      &trans            &trans  &kp LEFT_ALT  &trans     &trans  &trans
+&trans  &kp Q   &kp W   &kp E  &RecruitMeGitlab     &Terminal  &trans     &trans   &IDEA  &trans  &PivitoalTracker  &trans
+&trans  &kp A  &Slack   &kp D             &kp F      &ChatGPT  &trans     &trans  &trans  &trans            &trans  &trans
+&trans  &Zoom   &kp X   &kp C             &kp V         &kp B  &trans  &MyGitLab  &trans  &trans            &trans  &trans
+                       &trans            &trans  &kp LEFT_ALT  &trans     &trans  &trans
             >;
         };
     };
