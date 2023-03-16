@@ -31,8 +31,15 @@
                 <&kp SPACE &kp LEFT_COMMAND>,
                 <&macro_wait_time 1>,
                 <&macro_tap>,
-                <&kp I &kp D &kp E &kp A &kp ENTER>,
-                <&macro_wait_time 2>;
+                <&kp I>,
+                <&macro_wait_time 1>,
+                <&kp D>,
+                <&macro_wait_time 1>,
+                <&kp E>,
+                <&macro_wait_time 1>,
+                <&kp A>,
+                <&macro_wait_time 5>,
+                <&kp ENTER>;
         };
         MyGitLab: MyGitLab {
             compatible = "zmk,behavior-macro";
