@@ -160,9 +160,9 @@
                 <&macro_release>,
                 <&kp SPACE &kp LEFT_COMMAND>,
                 <&macro_tap>,
-                <&kp LS(S) &kp LS(W) &kp LS(F) &kp SPACE &kp LS(G) &kp O &kp O &kp G &kp L &kp E &kp SPACE &kp LS(C) &kp A &kp L &kp A &kp N &kp D &kp E>,
+                <&kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp DOT &kp G &kp O &kp O &kp G &kp L &kp E &kp DOT &kp C &kp O &kp M &kp FSLH &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R>,
                 <&macro_wait_time 500>,
-                <&kp R &kp ENTER>;
+                <&kp FSLH &kp ENTER>;
         };
     };
 
