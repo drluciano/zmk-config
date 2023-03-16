@@ -146,6 +146,22 @@
                 <&macro_wait_time 100>,
                 <&kp ENTER>;
         };
+        SWFCalander: SWFCalander {
+            compatible = "zmk,behavior-macro";
+            label = "SWFCalander_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_wait_time 100>,
+                <&kp LEFT_COMMAND &kp SPACE>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp SPACE &kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp DOT &kp G &kp O &kp O &kp G &kp L &kp E &kp DOT &kp C &kp O &kp M &kp FSLH &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp FSLH &kp U &kp FSLH &kp N1 &kp FSLH>,
+                <&macro_wait_time 500>,
+                <&kp R &kp ENTER>;
+        };
     };
 
     behaviors {
@@ -201,10 +217,10 @@
 
         Macros {
             bindings = <
-&trans  &kp Q   &kp W   &kp E  &RecruitMeGitlab     &Terminal  &trans     &trans   &IDEA  &trans  &PivitoalTracker  &trans
-&trans  &kp A  &Slack   &kp D             &kp F      &ChatGPT  &trans     &trans  &trans  &trans            &trans  &trans
-&trans  &Zoom   &kp X   &kp C             &kp V         &kp B  &trans  &MyGitLab  &trans  &trans            &trans  &trans
-                       &trans            &trans  &kp LEFT_ALT  &trans     &trans  &trans
+&trans  &kp Q   &kp W         &kp E  &RecruitMeGitlab     &Terminal  &trans     &trans   &IDEA  &trans  &PivitoalTracker  &trans
+&trans  &kp A  &Slack         &kp D             &kp F      &ChatGPT  &trans     &trans  &trans  &trans            &trans  &trans
+&trans  &Zoom   &kp X  &SWFCalander             &kp V         &kp B  &trans  &MyGitLab  &trans  &trans            &trans  &trans
+                             &trans            &trans  &kp LEFT_ALT  &trans     &trans  &trans
             >;
         };
     };
