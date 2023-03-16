@@ -17,6 +17,16 @@
     };
 
     macros {
+        IDEA: IDEA {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_COMMAND &kp SPACE>,
+                <&macro_release>,
+                <&macro_tap>,
+                <&kp I &kp D &kp E &kp A &kp ENTER>;
+        };
     };
 
     behaviors {
@@ -70,9 +80,9 @@
             >;
         };
 
-        Gaming_Mode {
+        Macros {
             bindings = <
-&trans  &kp Q  &kp W   &kp E   &kp R         &kp T  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp Q  &kp W   &kp E   &kp R         &kp T  &trans  &trans   &IDEA  &trans  &trans   &mo 3
 &trans  &kp A  &kp S   &kp D   &kp F         &kp G  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp Z  &kp X   &kp C   &kp V         &kp B  &trans  &trans  &trans  &trans  &trans  &trans
                       &trans  &trans  &kp LEFT_ALT  &trans  &trans  &trans
