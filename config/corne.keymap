@@ -114,6 +114,22 @@
                 <&macro_wait_time 500>,
                 <&kp M &kp ENTER>;
         };
+        RecruitMeGitlab: RecruitMeGitlab {
+            compatible = "zmk,behavior-macro";
+            label = "RecruitMeGitlab_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_wait_time 100>,
+                <&kp LEFT_COMMAND &kp SPACE>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp SPACE &kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp G &kp I &kp T &kp L &kp A &kp B &kp DOT &kp C &kp R &kp E &kp A &kp T &kp E &kp DOT &kp A &kp R &kp M &kp Y &kp DOT &kp M &kp I &kp L &kp FSLH &kp R &kp E &kp C &kp R &kp U &kp I &kp T &kp I &kp N &kp G &kp FSLH &kp R &kp E &kp C &kp R &kp U &kp I &kp T &kp M>,
+                <&macro_wait_time 500>,
+                <&kp E &kp ENTER>;
+        };
     };
 
     behaviors {
@@ -169,10 +185,10 @@
 
         Macros {
             bindings = <
-&trans  &kp Q  &kp W   &kp E   &kp R     &Terminal  &trans     &trans   &IDEA  &trans  &PivitoalTracker  &trans
-&trans  &kp A  &kp S   &kp D   &kp F      &ChatGPT  &trans     &trans  &trans  &trans            &trans  &trans
-&trans  &Zoom  &kp X   &kp C   &kp V         &kp B  &trans  &MyGitLab  &trans  &trans            &trans  &trans
-                      &trans  &trans  &kp LEFT_ALT  &trans     &trans  &trans
+&trans  &kp Q  &kp W   &kp E  &RecruitMeGitlab     &Terminal  &trans     &trans   &IDEA  &trans  &PivitoalTracker  &trans
+&trans  &kp A  &kp S   &kp D             &kp F      &ChatGPT  &trans     &trans  &trans  &trans            &trans  &trans
+&trans  &Zoom  &kp X   &kp C             &kp V         &kp B  &trans  &MyGitLab  &trans  &trans            &trans  &trans
+                      &trans            &trans  &kp LEFT_ALT  &trans     &trans  &trans
             >;
         };
     };
