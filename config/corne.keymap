@@ -31,7 +31,7 @@
                 <&macro_tap>,
                 <&macro_wait_time 1>,
                 <&kp I &kp D &kp E &kp A>,
-                <&macro_tap>,
+                <&macro_wait_time 100>,
                 <&kp ENTER>;
         };
         MyGitLab: MyGitLab {
