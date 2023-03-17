@@ -126,9 +126,9 @@
                 <&macro_release>,
                 <&kp SPACE &kp LEFT_COMMAND>,
                 <&macro_tap>,
-                <&kp G &kp I &kp T &kp L &kp A &kp B &kp DOT &kp C &kp R &kp E &kp A &kp T &kp E &kp DOT &kp A &kp R &kp M &kp Y &kp DOT &kp M &kp I &kp L &kp FSLH &kp R &kp E &kp C &kp R &kp U>,
+                <&kp R &kp E &kp C &kp R &kp U &kp I &kp T &kp M &kp E &kp G &kp I &kp T &kp L &kp A>,
                 <&macro_wait_time 500>,
-                <&kp I &kp ENTER>;
+                <&kp B>;
         };
         Slack: Slack {
             compatible = "zmk,behavior-macro";
