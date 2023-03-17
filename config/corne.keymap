@@ -128,7 +128,7 @@
                 <&macro_tap>,
                 <&kp R &kp E &kp C &kp R &kp U &kp I &kp T &kp M &kp E &kp G &kp I &kp T &kp L &kp A>,
                 <&macro_wait_time 500>,
-                <&kp B>;
+                <&kp B &kp ENTER>;
         };
         Slack: Slack {
             compatible = "zmk,behavior-macro";
