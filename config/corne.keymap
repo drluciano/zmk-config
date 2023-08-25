@@ -17,150 +17,11 @@
     };
 
     macros {
-        IDEA: IDEA {
+        screenshotmac: screenshotmac {
             compatible = "zmk,behavior-macro";
-            label = "IDEAMACRO";
+            label = "SCREENSHOTMAC";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&macro_wait_time 150>,
-                <&kp LEFT_COMMAND &kp SPACE>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp SPACE &kp LEFT_COMMAND>,
-                <&macro_tap>,
-                <&macro_wait_time 1>,
-                <&kp I &kp D &kp E &kp A>,
-                <&macro_wait_time 100>,
-                <&kp ENTER &kp LEFT_COMMAND>;
-        };
-        MyGitLab: MyGitLab {
-            compatible = "zmk,behavior-macro";
-            label = "MyGitLab";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&macro_wait_time 100>,
-                <&kp LEFT_COMMAND &kp SPACE>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp SPACE &kp LEFT_COMMAND>,
-                <&macro_tap>,
-                <&kp G &kp I &kp T &kp L &kp A &kp B &kp DOT &kp C &kp O>,
-                <&macro_wait_time 500>,
-                <&kp M &kp ENTER>;
-        };
-        Terminal: Terminal {
-            compatible = "zmk,behavior-macro";
-            label = "Terminalmacro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&macro_wait_time 150>,
-                <&kp LEFT_COMMAND &kp SPACE>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp SPACE &kp LEFT_COMMAND>,
-                <&macro_tap>,
-                <&kp I &kp T &kp E &kp R &kp M>,
-                <&macro_wait_time 100>,
-                <&kp ENTER>;
-        };
-        ChatGPT: ChatGPT {
-            compatible = "zmk,behavior-macro";
-            label = "ChatGPT_macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&macro_wait_time 100>,
-                <&kp LEFT_COMMAND &kp SPACE>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp SPACE &kp LEFT_COMMAND>,
-                <&macro_tap>,
-                <&kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp C &kp H &kp A &kp T &kp DOT &kp O &kp P &kp E &kp N &kp A &kp I &kp DOT &kp C &kp O>,
-                <&macro_wait_time 500>,
-                <&kp M &kp ENTER>;
-        };
-        Zoom: Zoom {
-            compatible = "zmk,behavior-macro";
-            label = "Zoom_macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&macro_wait_time 150>,
-                <&kp LEFT_COMMAND &kp SPACE>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp SPACE &kp LEFT_COMMAND>,
-                <&macro_tap>,
-                <&kp Z &kp O &kp O &kp M>,
-                <&macro_wait_time 100>,
-                <&kp ENTER>;
-        };
-        PivitoalTracker: PivitoalTracker {
-            compatible = "zmk,behavior-macro";
-            label = "PivitolTracker_macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&macro_wait_time 100>,
-                <&kp LEFT_COMMAND &kp SPACE>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp SPACE &kp LEFT_COMMAND>,
-                <&macro_tap>,
-                <&kp H &kp T &kp T &kp P &kp COLON &kp FSLH &kp FSLH &kp P &kp I &kp V &kp O &kp T &kp A &kp L &kp T &kp R &kp A &kp C &kp K &kp E &kp R &kp DOT &kp C &kp O>,
-                <&macro_wait_time 500>,
-                <&kp M &kp ENTER>;
-        };
-        RecruitMeGitlab: RecruitMeGitlab {
-            compatible = "zmk,behavior-macro";
-            label = "RecruitMeGitlab_macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&macro_wait_time 100>,
-                <&kp LEFT_COMMAND &kp SPACE>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp SPACE &kp LEFT_COMMAND>,
-                <&macro_tap>,
-                <&kp R &kp E &kp C &kp R &kp U &kp I &kp T &kp M &kp E &kp G &kp I &kp T &kp L &kp A>,
-                <&macro_wait_time 500>,
-                <&kp B &kp ENTER>;
-        };
-        Slack: Slack {
-            compatible = "zmk,behavior-macro";
-            label = "Slack_macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&macro_wait_time 150>,
-                <&kp LEFT_COMMAND &kp SPACE>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp SPACE &kp LEFT_COMMAND>,
-                <&macro_tap>,
-                <&kp S &kp L &kp A &kp C &kp K>,
-                <&macro_wait_time 100>,
-                <&kp ENTER>;
-        };
-        SWFCalander: SWFCalander {
-            compatible = "zmk,behavior-macro";
-            label = "SWFCalander_macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&macro_wait_time 100>,
-                <&kp LEFT_COMMAND &kp SPACE>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp SPACE &kp LEFT_COMMAND>,
-                <&macro_tap>,
-                <&kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp DOT &kp G &kp O &kp O &kp G &kp L &kp E &kp DOT &kp C &kp O &kp M &kp FSLH &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R>,
-                <&macro_wait_time 500>,
-                <&kp FSLH &kp ENTER>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp N4>;
         };
     };
 
@@ -178,9 +39,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-  &kp TAB               &kp Q               &kp W           &kp E  &kp R      &kp T      &kp Y  &kp U          &kp I    &kp O          &kp P           &mo 3
-  &kp DEL               &kp A               &kp S           &kp D  &kp F      &kp G      &kp H  &kp J          &kp K    &kp L  &kp SEMICOLON         &kp SQT
-&kp LSHFT  &mt LEFT_CONTROL Z  &mt LEFT_COMMAND X  &mt LEFT_ALT C  &kp V      &kp B      &kp N  &kp M      &kp COMMA  &kp DOT       &kp FSLH  &kp LEFT_SHIFT
+  &kp TAB               &kp Q               &kp W           &kp E  &kp R      &kp T      &kp Y  &kp U          &kp I    &kp O     &kp P          &tog 3
+  &kp DEL               &kp A               &kp S           &kp D  &kp F      &kp G      &kp H  &kp J          &kp K    &kp L  &kp SEMI         &kp SQT
+&kp LSHFT  &mt LEFT_CONTROL Z  &mt LEFT_COMMAND X  &mt LEFT_ALT C  &kp V      &kp B      &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp LEFT_SHIFT
                                                           &kp ESC  &mo 1  &kp SPACE  &kp SPACE  &mo 2  &kp BACKSPACE
             >;
         };
@@ -193,10 +54,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-       &kp TAB      &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0       &kp MINUS
-        &trans            &trans            &trans        &trans        &trans        &trans     &kp TILDE     &kp EQUAL       &kp LBKT      &kp RBKT      &kp BSLH       &kp GRAVE
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LEFT_ALT        &trans        &trans        &trans      &kp PLUS       &kp LBRC      &kp RBRC      &kp PIPE  &kp LEFT_SHIFT
-                                                        &kp LGUI        &trans     &kp SPACE       &kp RET        &trans  &kp BACKSPACE
+       &kp TAB      &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0          &trans
+        &trans            &trans            &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans          &trans
+&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LEFT_ALT        &trans        &trans        &trans        &trans        &trans        &trans        &trans  &kp LEFT_SHIFT
+                                                          &trans        &trans        &trans       &kp RET        &trans        &trans
             >;
         };
 
@@ -208,19 +69,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-    &kp F1            &kp F2        &kp F3        &kp F4        &kp F5        &kp F6             &kp F7           &kp F8         &kp F9     &kp F10           &kp F11     &kp F12
-&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4           &kp LEFT         &kp DOWN         &kp UP   &kp RIGHT            &trans      &trans
- &kp LSHFT  &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT        &trans        &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP     &kp C_PREV  &kp C_NEXT  &kp C_PLAY_PAUSE  &kp C_STOP
-                                                &kp LGUI        &trans     &kp SPACE            &kp RET           &trans  &kp BACKSPACE
+    &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7    &kp F8    &kp F9    &kp F10     &kp F11            &kp F12
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &screenshotmac    &trans    &kp UP     &trans  &kp K_MUTE    &kp C_VOLUME_UP
+    &trans        &trans        &trans        &trans        &trans        &trans          &trans  &kp LEFT  &kp DOWN  &kp RIGHT      &trans  &kp C_VOLUME_DOWN
+                                              &trans        &trans        &trans          &trans    &trans    &trans
             >;
         };
 
-        Macros {
+        gaming_layer {
             bindings = <
-&trans  &kp Q   &kp W         &kp E  &RecruitMeGitlab     &Terminal  &trans     &trans   &IDEA  &trans  &PivitoalTracker  &trans
-&trans  &kp A  &Slack         &kp D             &kp F      &ChatGPT  &trans     &trans  &trans  &trans            &trans  &trans
-&trans  &Zoom   &kp X  &SWFCalander             &kp V         &kp B  &trans  &MyGitLab  &trans  &trans            &trans  &trans
-                             &trans            &trans  &kp LEFT_ALT  &trans     &trans  &trans
+       &kp N1  &kp Q  &kp W      &kp E         &kp R  &mt TAB T      &kp Y            &kp U      &kp I    &kp O     &kp P  &kp ESC
+       &kp N2  &kp A  &kp S      &kp D         &kp F      &kp G      &kp H            &kp J      &kp K    &kp L  &kp SEMI  &kp SQT
+&mt LSHIFT N3  &kp Z  &kp X      &kp C         &kp V      &kp B      &kp N            &kp M  &kp COMMA  &kp DOT  &kp FSLH   &tog 0
+                             &kp LCTRL  &kp NUMBER_4  &kp SPACE  &kp SPACE  &kp PRINTSCREEN   &kp BSPC
             >;
         };
     };
