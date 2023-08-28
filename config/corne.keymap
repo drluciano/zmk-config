@@ -34,19 +34,19 @@
 
             label = "BASE";
             bindings = <
-  &kp ESC               &kp Q  &kp W             &kp E  &kp R      &kp T      &kp Y  &kp U          &kp I    &kp O     &kp P    &kp BSPC
-  &kp TAB               &kp A  &kp S             &kp D  &kp F      &kp G      &kp H  &kp J          &kp K    &kp L  &kp SEMI    &kp APOS
-&kp LSHFT  &mt LEFT_COMMAND Z  &kp X             &kp C  &kp V      &kp B      &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
-                                      &kp LEFT_CONTROL  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RIGHT_ALT
+  &kp ESC  &kp Q  &kp W             &kp E  &kp R      &kp T    &kp Y  &kp U          &kp I    &kp O     &kp P    &kp BSPC
+  &kp TAB  &kp A  &kp S             &kp D  &kp F      &kp G    &kp H  &kp J          &kp K    &kp L  &kp SEMI    &kp APOS
+&kp LSHFT  &kp Z  &kp X             &kp C  &kp V      &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
+                         &kp LEFT_CONTROL  &mo 1  &kp SPACE  &kp RET  &mo 2  &kp RIGHT_ALT
             >;
         };
 
         NUM {
             bindings = <
-&trans  &trans    &trans    &kp UP     &trans  &trans    &kp EQUAL  &kp N7  &kp N8  &kp N9    &trans   &kp DEL
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &kp MINUS  &kp N4  &kp N5  &kp N6  &kp LBKT  &kp LBRC
-&trans  &trans    &trans    &trans     &trans  &trans       &kp N0  &kp N1  &kp N2  &kp N3    &trans  &kp BSLH
-                            &trans     &trans  &trans       &trans  &trans  &trans
+&trans  &trans    &trans    &kp UP     &trans  &trans  &kp EQUAL  &kp N7  &kp N8  &kp N9    &trans   &kp DEL
+&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &kp MINUS  &kp N4  &kp N5  &kp N6  &kp LBKT  &kp LBRC
+&trans  &trans    &trans    &trans     &trans  &trans     &kp N0  &kp N1  &kp N2  &kp N3    &trans  &kp BSLH
+                            &trans     &trans  &trans     &trans  &trans  &trans
             >;
 
             label = "NUM";
@@ -54,10 +54,10 @@
 
         FUNC {
             bindings = <
-    &kp F1      &kp F2      &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-    &trans  &bt BT_PRV  &bt BT_NXT  &trans  &trans   &to 3    &trans  &trans  &trans   &trans   &trans   &trans
-&bt BT_CLR      &trans      &trans  &trans  &trans  &trans    &trans  &trans  &trans   &trans   &trans   &trans
-                                    &trans  &trans  &trans    &trans  &trans  &trans
+    &kp F1      &kp F2      &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+    &trans  &bt BT_PRV  &bt BT_NXT  &trans  &trans   &to 3  &trans  &trans  &trans   &trans   &trans   &trans
+&bt BT_CLR      &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans   &trans
+                                    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "FUNC";
@@ -65,10 +65,10 @@
 
         GAME {
             bindings = <
-  &kp ESC  &kp Q  &kp W      &kp E  &kp R      &kp T      &kp Y      &kp U    &kp I     &kp O     &kp P  &kp BSPC
-  &kp TAB  &kp A  &kp S      &kp D  &kp F      &kp G      &kp H      &kp J    &kp K     &kp L  &kp SEMI   &kp SQT
-&kp LSHFT  &kp Z  &kp X      &kp V  &kp B      &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH    &trans    &trans
-                         &kp LCTRL  &mo 4  &kp SPACE    &kp RET   &kp RALT   &trans
+  &kp ESC  &kp Q  &kp W      &kp E  &kp R      &kp T    &kp Y      &kp U    &kp I     &kp O     &kp P  &kp BSPC
+  &kp TAB  &kp A  &kp S      &kp D  &kp F      &kp G    &kp H      &kp J    &kp K     &kp L  &kp SEMI   &kp SQT
+&kp LSHFT  &kp Z  &kp X      &kp V  &kp B      &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH    &trans    &trans
+                         &kp LCTRL  &mo 4  &kp SPACE  &kp RET   &kp RALT   &trans
             >;
 
             label = "GAME";
@@ -76,10 +76,10 @@
 
         GAME_NUMBERS {
             bindings = <
-&kp N1  &kp N4  &trans  &kp N5  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &to 0
-&kp N2  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp N3  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp N1  &kp N4  &trans  &kp N5  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &to 0
+&kp N2  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp N3  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "GNUM";
