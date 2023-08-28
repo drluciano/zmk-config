@@ -12,7 +12,14 @@
 #define special_letters 2
 
 / {
+    combos {
+        compatible = "zmk,combos";
+    };
+
     macros {
+    };
+
+    behaviors {
     };
 
     keymap {
@@ -78,8 +85,4 @@
             label = "GNUM";
         };
     };
-};
-
-&nice_view_spi {
-    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
 };
