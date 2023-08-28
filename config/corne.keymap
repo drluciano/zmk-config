@@ -8,6 +8,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+#define numbers_bluetooth 1
+#define special_letters 2
+
 / {
     macros {
     };
