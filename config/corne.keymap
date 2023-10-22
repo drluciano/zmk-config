@@ -11,10 +11,6 @@
 #define numbers_bluetooth 1
 #define special_letters 2
 
-&mt {
-    tapping-term-ms = <400>;
-};
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -24,6 +20,15 @@
     };
 
     behaviors {
+        hrow: hrow {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HROW";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <300>;
+        };
     };
 
     keymap {
@@ -38,19 +43,19 @@
 
             label = "BASE";
             bindings = <
-&kp ESC           &kp Q  &kp W  &kp E             &kp R               &kp T      &kp Y    &kp U               &kp I            &kp O    &kp P     &kp BSPC
-&mt LEFT_GUI TAB  &kp A  &kp S  &mt LEFT_ALT D    &mt LEFT_CONTROL F  &kp G      &kp H    &mt LEFT_CONTROL J  &mt RIGHT_ALT K  &kp L    &kp SEMI  &kp APOS
-&kp LSHFT         &kp Z  &kp X  &kp C             &kp V               &kp B      &kp N    &kp M               &kp COMMA        &kp DOT  &kp FSLH  &kp BACKSLASH
-                                &kp LEFT_CONTROL  &mo 1               &kp SPACE  &kp RET  &mo 2               &kp RIGHT_ALT
+&kp ESC             &kp Q  &kp W  &kp E             &kp R                 &kp T      &kp Y    &kp U                 &kp I              &kp O    &kp P     &kp BSPC
+&hrow LEFT_GUI TAB  &kp A  &kp S  &hrow LEFT_ALT D  &hrow LEFT_CONTROL F  &kp G      &kp H    &hrow LEFT_CONTROL J  &hrow RIGHT_ALT K  &kp L    &kp SEMI  &kp APOS
+&kp LSHFT           &kp Z  &kp X  &kp C             &kp V                 &kp B      &kp N    &kp M                 &kp COMMA          &kp DOT  &kp FSLH  &kp BACKSLASH
+                                  &trans            &mo 1                 &kp SPACE  &kp RET  &mo 2                 &kp DELETE
             >;
         };
 
         NUM {
             bindings = <
-&kp C_VOL_UP       &trans  &trans    &kp UP    &trans     &trans  &kp EQUAL  &kp N7  &kp N8  &kp N9  &trans    &kp DEL
-&kp C_VOLUME_DOWN  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &kp MINUS  &kp N4  &kp N5  &kp N6  &kp LBKT  &kp RBKT
-&trans             &trans  &trans    &trans    &trans     &trans  &trans     &kp N1  &kp N2  &kp N3  &trans    &trans
-                                     &trans    &trans     &trans  &trans     &trans  &kp N0
+&trans  &trans  &trans    &kp UP    &trans     &trans  &kp EQUAL  &kp N7  &kp N8  &kp N9  &trans                &kp DEL
+&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &kp MINUS  &kp N4  &kp N5  &kp N6  &kp LBKT              &kp RBKT
+&trans  &trans  &trans    &trans    &trans     &trans  &trans     &kp N1  &kp N2  &kp N3  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+                          &trans    &trans     &trans  &trans     &trans  &kp N0
             >;
 
             label = "NUM";
@@ -58,10 +63,10 @@
 
         FUNC {
             bindings = <
-&kp F1      &kp F2      &kp F3      &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans      &bt BT_PRV  &bt BT_NXT  &trans  &trans  &to 0   &to 0   &trans  &trans  &trans   &trans   &trans
-&bt BT_CLR  &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans
-                                    &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR  &trans  &trans  &trans  &trans  &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans
+&trans      &trans  &trans  &trans  &trans  &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans
+&bt BT_NXT  &trans  &trans  &trans  &trans  &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans
+                            &trans  &trans  &trans  &trans  &trans   &trans
             >;
 
             label = "FUNC";
